@@ -2,15 +2,18 @@
   "name": "account-management-frontend-level-1",
   "version": "0.0.1",
   "scripts": {
-    "build": "echo build your frontend app here",
-    "start": "echo start your frontend app here",
+    "build": "next build",
+    "start": "next start",
     "start:backend": "node_modules/.bin/account-management-api",
     "cy:run": "cypress run",
     "test": "start-server-and-test start:backend http-get://localhost:8080 cy:run"
   },
   "dependencies": {
     "@devskills/account-management-api": "^0.0.3",
-    "start-server-and-test": "^1.11.5"
+    "start-server-and-test": "^1.11.5",
+    "next": "9.5.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "cypress": "^5.4.0"
