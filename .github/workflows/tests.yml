@@ -9,7 +9,7 @@ jobs:
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:
-          build: yarn run build
+          build: yarn run build:frontend
           start: yarn run start
       - uses: actions/upload-artifact@v1
         if: failure()
